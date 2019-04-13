@@ -54,6 +54,9 @@ figcaption {
 #logo h2 {
   font-family: 'Elsie Swash Caps', cursive;
 }
+#logo {
+  background: white;
+}
 
 /* Psuedo Selector */
 
@@ -71,13 +74,18 @@ figcaption {
   color: red;
 }
 
-/*////////////////////LAYOUT
+/*////////////////////////////////////////LAYOUT
 //////////////*/
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  background: #eee;
+
 }
 
 .col-1 {
@@ -121,3 +129,36 @@ clearfix:after {
 img, video, audio {
   max-width: 100%;
 }
+
+/*/////////////////////////////SECTIONS
+///////////////*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#social {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  width: 40px;
+  z-index: 1;
+}
+
+#social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+}
+
+
